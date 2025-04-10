@@ -1,0 +1,25 @@
+    /* style 전용 메모 */
+    /* 각 태그의 셀렉터와 연결해서 사용한다 */
+    /* tag 셀렉터 : 해당 태그에 모두 적용 (1점) */
+    /* class 셀렉터 : 해당 클래스를 보유한 모든 태그에 적용 (10점) */
+    /* id 셀렉터 : 해당 아이디를 보유한 그 태그에 적용 (100점) */
+    /* css : cascading style sheet : style 태그를 별도 파일로 잘라냄 */
+    /* <link rel="stylesheet" href="./style.css"> */
+    
+    p{
+        /* 모든 p 태그에 적용할 스타일 (tag 셀렉터) */
+        color:red;
+      }
+  
+      .blue-color{
+  
+        /* 해당 클래스 이름을 가진 모든 태그에 적용할 스타일 (class셀렉터) */
+        color:blue;
+        background:yellowgreen;
+      }
+  
+      #yellow-btn{
+  
+        /* 해당 아이디를 가진 1개의 태그에 적용할 스타일 (id셀렉터) */
+        color:yellow;
+      }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display</title>
+  <style>
+    /* display : block, inline, inline-block, none, flex, grid */
+    /* => block : [div, p, h1] 한줄 전체를 사용, 새로운 줄에서 시작하고 끝난다. */
+    /* => inline : [span, a, img] 글자처럼 해당 크기만 취급, 위아래 마진과 패딩이 적용X */
+    /* => inline-block : [button, select] inline + block, 해당 크기만 차지하되 위아래 마진과 패딩이 적용 가능 */
+    /* => none : 그리지 않는다 (없는 것 취급) */
+    /* => flex : 쉬운 정렬 (추가 속성) */
+    /* => grid : 행렬 배치 (추가 속성) */
+    .outer-box{
+      width:50%;
+      height:300px;
+      background:lightgreen;
+      display : flex; /* flex 전용 스타일을 사용할 수 있게 된다 */
+      justify-content : center; /* 수평 정렬 */
+      align-items : center; /* 수직 정렬 */
+      
+      /*
+      margin : 0 auto;
+      align-content:center;
+      text-align : center;
+      */
+    }
+
+    .inner-box{
+      width:50%;
+      height:50%;
+      background:blueviolet;
+      display : flex; /* flex 전용 스타일을 사용할 수 있게 된다 */
+      justify-content : center; /* 수평 정렬 */
+      align-items : center; /* 수직 정렬 */
+      
+      /*
+      margin : 0 auto;
+      align-content:center;
+      */
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 어떤 태그는 한줄 전체를 차지하고 , 어떤 태그는 옆에 바로 위치  -->
+  <h2>제목</h2>
+  <p>본문</p>
+  <img src="img/image3.jpg" width="100px" height="100px">
+  <button style="margin-top:30px;">버튼</button>
+  <p style="display:none;">아래글</p>
+  <div>
+    <span style="margin-top:30px;">텍스트1</span>
+    <span>텍스트2</span>
+  </div>
+
+  <div class="outer-box">
+    <div class="inner-box">
+      <span>Hello HTML!</span>
+    </div>
+  </div>
+
+</body>
+</html>

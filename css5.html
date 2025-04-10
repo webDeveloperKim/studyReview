@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여백</title>
+  <style>
+    *{
+      /* * : 전체 */
+      margin : 0;
+      box-sizing : border-box; /* 상자 크기가 내부 요소의 영향을 받지 않게  */
+    }
+    body{
+      margin:0;
+    }
+
+    .container{
+      width:100%;   /* vw : 화면상 보이는 가로크기 % */
+      height:100vh; /* vh : 웹화면상에 보이는 높이 */
+      background:lightgreen;
+    }
+
+    .outer-box{
+      width : 500px;
+      height : 500px;
+      border : 2px solid blueviolet;
+      margin : 20px;   /* 상하좌우 모두 적용 */
+      margin : 20px 5px;  /* 상하(20px), 좌우(5px) 적용 */
+      margin : 100px 20px 15px 0; /* 시계방향 (상, 우, 하, 왼) 적용 */
+      padding : 100px 50px 10px; /* 상 , 양옆 , 하 적용 */
+      margin : 0 auto; /* 상자(block)를 가운데로 보낼 때 */
+
+    }
+
+    .inner-box{
+      width : 100%;
+      height : 100%;
+      border : 2px dashed red;
+      padding : 50px;
+      box-sizing : border-box;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>제목글1</h1>
+    <h2>제목글2</h2>
+    <h3>제목글3</h3>
+    <p>본문글</p>
+    <p>본문글</p>
+    <p>본문글</p>
+
+    <div class="outer-box">
+      <div class="inner-box">
+        Hello HTML!
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

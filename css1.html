@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- head 태그 안에는 설정값 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제목</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    /* style 전용 메모 */
+    /* 각 태그의 셀렉터와 연결해서 사용한다 */
+    /* tag 셀렉터 : 해당 태그에 모두 적용 (1점) */
+    /* class 셀렉터 : 해당 클래스를 보유한 모든 태그에 적용 (10점) */
+    /* id 셀렉터 : 해당 아이디를 보유한 그 태그에 적용 (100점) */
+    p{
+      /* 모든 p 태그에 적용할 스타일 (tag 셀렉터) */
+      color:red;
+    }
+
+    .blue-color{
+
+      /* 해당 클래스 이름을 가진 모든 태그에 적용할 스타일 (class셀렉터) */
+      color:blue;
+    }
+
+    #yellow-btn{
+
+      /* 해당 아이디를 가진 1개의 태그에 적용할 스타일 (id셀렉터) */
+      color:yellow;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- style 속성 : 각 태그를 꾸며주기 위한 속성 -->
+  <!-- 사용법1. 각 태그의 style 속성을 이용한다.(인라인 style) -->
+  <!-- 사용법2. 셀렉터와 head 태그 안에 style 태그를 이용한다(inner style) -->
+  <!-- 사용법3. 셀렉터와 css파일을 이용한다.(outer style) : style태그가 길어지면 지저분해지기 때문에 별도 파일로 분리 (cascading style sheet) -->
+  <h1 style="color:lightgreen;">제목글</h1>
+  <p>본문글1</p>
+  <p class="blue-color">본문글2</p>
+  <p>본문글3</p>
+  <button id="yellow-btn">버튼</button>
+</body>
+</html>
